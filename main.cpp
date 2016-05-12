@@ -9,14 +9,13 @@ using namespace miosix;
 
 int main(){
 	Adc adc;
-	
+	int bla;
 	string a;
 	cout << "Prima del while" << endl;
-	cin >> a;
 	while(1){
 		adc.start();
-		cout << "dopo start" << endl;
-		int bla = adc.read();
+		cout << "conversione startata" << endl;
+		bla = adc.read();
 		cout << bla << endl;
 	}
 }
