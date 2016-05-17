@@ -14,9 +14,10 @@ typedef Gpio<GPIOD_BASE,12> green;
 typedef Gpio<GPIOD_BASE,13> orange;
 typedef Gpio<GPIOD_BASE,14> blue;
 typedef Gpio<GPIOD_BASE,15> red;
+
 Adc adc;
 Mutex mutex;
-ConditionVariable cv1,cv2;
+ConditionVariable adcReadCv, calibrationCv;
 
 void blinkLed (void *argv){ //blinka i led a giro mentre ricalibra penso sia figo
 	green::mode(Mode::OUTPUT);
@@ -24,7 +25,7 @@ void blinkLed (void *argv){ //blinka i led a giro mentre ricalibra penso sia fig
 	red::mode(Mode::OUTPUT);
 	orange::mode(Mode::OUTPUT);
 	//int duration = 1000000; //per ora la hardcodo
-	for(;;){
+	for(int i = 0;i<20;i++){
 		green::high();
 		Thread::sleep(50);
 		green::low();
@@ -46,32 +47,48 @@ void blinkLed (void *argv){ //blinka i led a giro mentre ricalibra penso sia fig
 
 
 void recalibration (void* argv){
+	Thread *blinkThread;
 	while(1){
-		recalibratingButton::mode(Mode::INPUT);
-		while(recalibratingButton::value()==0)
-			Thread::sleep(10); //polling su button
-		Thread = *t;
-		thread = Thread::create(blinkLed,2048,1,(void *)2,Thread::JOINABLE);
-		Lock <Mutex> lock mutex;
-		for (int i = 0; i<1000000; i++){
-			//qua devo bloccare l'esecuzione del main finchè non si ricalibra
-			x = (adc.read() + x)/i);
+		Lock <Mutex> lck(mutex);
+		calibrationCv.wait(lck);
+		blinkThread=Thread::create(blinkLed,2048,1,(void*)0,Thread::JOINABLE);
+		for (int i = 0; i <200 i++){
+			adc.start();
+			x += adc.read();
+			cout << "CALIBRANDOOOOOOOOOOOOOOOOH " << i<<endl;
 		}
-		t->terminate();
+		x = x/200;
+		cout << "Nuovo threshold: " << x << endl;
+		blinkThread->join();
 	}
 }
 
-
-int main(){
-	Thread *thread;
-	thread = Thread::create(recalibration,2048,1,(void *)2,Thread::JOINABLE);
-	cout << "Prima del while" << endl;
+void adcRead(void* argv){
+	int bla;
+	Lock <Mutex> lck(mutex);
 	while(1){
+		adcReadCv.wait(lck);
 		adc.start();
-		int bla = adc.read();
+		bla = adc.read();
 		if (bla > x)
 			cout << "Valore letto: " << bla << endl;
 		Thread::sleep(1000);
 	}
-	thread->join();
+}
+
+int main(){
+	Thread *adcReadThread;
+	Thread *calibrationThread;
+	
+	adcReadThread=Thread::create(adcRead,2048,1,(void*)0,Thread::JOINABLE);
+	calibrationThread=Thread::create(recalibration,2048,1,(void*)0,Thread::JOINABLE);
+	while(1){
+		while(recalibratingButton::value()==0){
+			Thread::sleep(10); //polling su button
+			adcReadCv.signal();	
+		}
+		calibrationCv.signal();
+	}
+	adcReadThread->join();
+	calibrationThread->join();
 }
