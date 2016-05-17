@@ -52,7 +52,7 @@ void recalibration (void* argv){
 		Lock <Mutex> lck(mutex);
 		calibrationCv.wait(lck);
 		blinkThread=Thread::create(blinkLed,2048,1,(void*)0,Thread::JOINABLE);
-		for (int i = 0; i <200 i++){
+		for (int i = 0; i <200; i++){
 			adc.start();
 			x += adc.read();
 			cout << "CALIBRANDOOOOOOOOOOOOOOOOH " << i<<endl;
