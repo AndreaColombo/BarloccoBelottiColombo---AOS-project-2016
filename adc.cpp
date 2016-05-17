@@ -34,8 +34,7 @@ short Adc::read(){
 	
 	/* Wait till done */
 	while (!(ADC1->SR & (1<<1)));
-		
-	//}
+	
 	
 	/* Return result */
 	return ADC1->DR;
