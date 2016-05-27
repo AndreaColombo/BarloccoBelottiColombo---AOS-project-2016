@@ -70,8 +70,8 @@ void adcRead(void* argv){
 		adcReadCv.wait(lck);
 		adc.start();
 		val = adc.read();
-		//if (bla > x)
-			cout << "Valore letto: " << bla << endl;
+		//if (val > x)
+			cout << "Valore letto: " << val << endl;
 		Thread::sleep(1000);
 	}
 }
