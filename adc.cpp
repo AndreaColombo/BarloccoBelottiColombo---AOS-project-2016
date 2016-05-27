@@ -10,7 +10,7 @@ Adc::Adc(){
 	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN;
 	RCC->APB2ENR |= 1<<8;
 	
-	ADC1->CR1 = (1<<24) | (1<<25); //resolution (11->6 bit)
+	ADC1->CR1 = 0; //resolution (11->6 bit)
 	
 	ADC1->CR2 |= ADC_CR2_ADON;
 	//ADC1->CR2 |= 1<<1; quando starti la contnuos conversion mode

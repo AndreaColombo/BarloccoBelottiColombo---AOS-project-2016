@@ -19,13 +19,13 @@ Adc adc;
 Mutex mutex;
 ConditionVariable adcReadCv, calibrationCv;
 
-void blinkLed (void *argv){ //blinka i led a giro mentre ricalibra penso sia figo
+void blinkLed (void *argv){ //blinka i led a giro mentre ricalibra
 	green::mode(Mode::OUTPUT);
 	blue::mode(Mode::OUTPUT);
 	red::mode(Mode::OUTPUT);
 	orange::mode(Mode::OUTPUT);
-	//int duration = 1000000; //per ora la hardcodo
-	for(int i = 0;i<20;i++){
+	
+	for(int i = 0;i<10;i++){
 		green::high();
 		Thread::sleep(50);
 		green::low();
@@ -52,10 +52,10 @@ void recalibration (void* argv){
 		Lock <Mutex> lck(mutex);
 		calibrationCv.wait(lck);
 		blinkThread=Thread::create(blinkLed,2048,1,(void*)0,Thread::JOINABLE);
-		for (int i = 0; i <200; i++){
+		for (int i = 0; i <200;i++){
 			adc.start();
 			x += adc.read();
-			cout << "CALIBRANDOOOOOOOOOOOOOOOOH " << i<<endl;
+			cout << "Calibrando "<<endl;
 		}
 		x = x/200;
 		cout << "Nuovo threshold: " << x << endl;
@@ -64,13 +64,13 @@ void recalibration (void* argv){
 }
 
 void adcRead(void* argv){
-	int bla;
+	int val;
 	Lock <Mutex> lck(mutex);
 	while(1){
 		adcReadCv.wait(lck);
 		adc.start();
-		bla = adc.read();
-		if (bla > x)
+		val = adc.read();
+		//if (bla > x)
 			cout << "Valore letto: " << bla << endl;
 		Thread::sleep(1000);
 	}
