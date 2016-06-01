@@ -18,6 +18,7 @@ typedef Gpio<GPIOD_BASE,15> red;
 Adc adc;
 Mutex mutex;
 ConditionVariable adcReadCv, calibrationCv;
+int buffer[300];
 
 void blinkLed (void *argv){ //blinka i led a giro mentre ricalibra
 	green::mode(Mode::OUTPUT);
@@ -67,12 +68,19 @@ void adcRead(void* argv){
 	int val;
 	Lock <Mutex> lck(mutex);
 	while(1){
-		adcReadCv.wait(lck);
-		adc.start();
-		val = adc.read();
-		//if (val > x)
-			cout << "Valore letto: " << val << endl;
-		Thread::sleep(1000);
+		for (int i = 0; i<300; i++){
+			adcReadCv.wait(lck);
+			adc.start();
+			val = adc.read();
+			buffer[i] = val;
+			Thread::sleep(50);
+		}
+		
+		for (int i = 0; i<300; i++)
+			cout << buffer[i] << endl;
+		
+		char c;
+		cin >> c;
 	}
 }
 

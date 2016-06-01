@@ -17,7 +17,7 @@ Adc::Adc(){
 	//GPIOC->MODER |= 1<<2;
 	ADC1->SMPR1 = (1<<3);
 	adcIn::mode(Mode::INPUT_ANALOG);
-	
+	ADC->CCR |=(1<<17);
 	ADC1->SQR1 =0;
 	ADC1->SQR3 |= (1<<3) | (1<<1) | (1<<0);
 }
