@@ -21,3 +21,9 @@ main.map
 
 # PDF
 .pdf
+
+# LaTex files
+.log
+.aux
+.synctex.gz
+.out
