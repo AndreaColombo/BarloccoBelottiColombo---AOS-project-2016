@@ -53,6 +53,14 @@ For any other information on this photodiode visit: \url{http://www.vishay.com/d
 		\centering
 		\includegraphics[scale=0.6]{boardLinked.jpeg}
 	\end{figure}
+	\newpage
+	\subsection{Code description}
+		We wrote three files of code:
+		\begin{itemize}
+			\item main.cpp
+			\item adc.h: header file where we define the new class Adc with the constructor the method start() starts a conversion and the method read() waits for the end of the conversion and it returns the digital value
+			\item adc.cpp: where we wrote the code of the method defined in the adc.h
+		\end{itemize}
 \newpage
 		\include{report1}
 \newpage

@@ -2,5 +2,6 @@
 \contentsline {section}{\numberline {2}BPW34}{3}{section.2}
 \contentsline {section}{\numberline {3}How it works}{4}{section.3}
 \contentsline {subsection}{\numberline {3.1}Board configuration}{4}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Results}{5}{subsection.3.2}
-\contentsline {section}{\numberline {4}Used Software}{7}{section.4}
+\contentsline {subsection}{\numberline {3.2}Code description}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Results}{6}{subsection.3.3}
+\contentsline {section}{\numberline {4}Used Software}{8}{section.4}

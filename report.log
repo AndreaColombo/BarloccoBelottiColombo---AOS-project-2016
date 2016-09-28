@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.24)  28 SEP 2016 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.24)  28 SEP 2016 15:45
 entering extended mode
 **./report.tex
 (report.tex
@@ -277,11 +277,11 @@ File: boardLinked.jpeg Graphic file (type jpg)
 <use boardLinked.jpeg>
 Package pdftex.def Info: boardLinked.jpeg used on input line 54.
 (pdftex.def)             Requested size: 209.94595pt x 299.56145pt.
- [4 <./boardLinked.jpeg>]
+ [4 <./boardLinked.jpeg>] [5]
 \openout2 = `report1.aux'.
 
  (report1.tex
-<graphs/onButton_2.jpg, id=66, 1606.0pt x 903.375pt>
+<graphs/onButton_2.jpg, id=70, 1606.0pt x 903.375pt>
 File: graphs/onButton_2.jpg Graphic file (type jpg)
 
 <use graphs/onButton_2.jpg>
@@ -292,7 +292,7 @@ Overfull \hbox (136.80373pt too wide) in paragraph at lines 10--11
  [][] 
  []
 
-<graphs/1Button.jpg, id=67, 1606.0pt x 903.375pt>
+<graphs/1Button.jpg, id=71, 1606.0pt x 903.375pt>
 File: graphs/1Button.jpg Graphic file (type jpg)
  <use graphs/1Button.jpg>
 Package pdftex.def Info: graphs/1Button.jpg used on input line 17.
@@ -305,7 +305,7 @@ Overfull \hbox (136.80373pt too wide) in paragraph at lines 17--18
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphs/2Button.jpg, id=68, 632.3625pt x 174.6525pt>
+<graphs/2Button.jpg, id=72, 632.3625pt x 174.6525pt>
 File: graphs/2Button.jpg Graphic file (type jpg)
  <use graphs/2Button.jpg>
 Package pdftex.def Info: graphs/2Button.jpg used on input line 24.
@@ -314,24 +314,31 @@ Package pdftex.def Info: graphs/2Button.jpg used on input line 24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [5
+) [6
 
- <./graphs/onButton_2.jpg>] [6 <./graphs/1Button.jpg> <./graphs/2Button.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
- [7
+ <./graphs/onButton_2.jpg>] [7 <./graphs/1Button.jpg> <./graphs/2Button.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
+ [8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
  (report.aux (report1.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 45B5ABAA26CD57E9D3846FB71C7B54E2;312.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
+
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 45B5ABAA26CD57E9D3846FB71C7B54E2;312
+(rerunfilecheck)             After:  3470E6EBBA65CE345A019C3CAF4108D4;378.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
- 5154 strings out of 493334
- 76524 string characters out of 3136672
+ 5156 strings out of 493334
+ 76544 string characters out of 3136672
  157370 words of memory out of 3000000
  8638 multiletter control sequences out of 15000+200000
  8370 words of font info for 30 fonts, out of 3000000 for 9000
@@ -344,9 +351,9 @@ rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (8 pages, 1073842 bytes).
+Output written on report.pdf (9 pages, 1075173 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
+ 120 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
  79 words of extra memory for PDF output out of 10000 (max. 10000000)
 
