@@ -35,7 +35,7 @@
 		\item Suitable for visible and near infrared radiation
 	\end{itemize}
 	
-For any other information on this photodiode visit: http://www.vishay.com/docs/81521/bpw34.pdf
+For any other information on this photodiode visit: \url{http://www.vishay.com/docs/81521/bpw34.pdf}
 \newpage
 \section{How it works}
 	\subsection{Board configuration}
@@ -46,9 +46,15 @@ For any other information on this photodiode visit: http://www.vishay.com/docs/8
 			\item PC1: BPW34 red wire 
 			\item PB10:FTDI yellow wire 
 			\item PB11:FTDI orange wire  
-			\item VDD: FTDI black wire 
+			\item VDD: FTDI red wire 
 		\end{itemize}
-
+		The BPW34 sends the value that it sees to the pin PC1. This pin is connected to the ADC, it converts the value in digital so we can use it easly.\\ The FTDI is used to print the values, that the photodiode receives, on the Arduino serial monitor.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.6]{boardLinked.jpeg}
+	\end{figure}
+\newpage
+		\include{report1}
 \newpage
 \section{Used Software}
 \begin{itemize}
