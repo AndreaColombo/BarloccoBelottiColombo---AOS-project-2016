@@ -1,4 +1,4 @@
-\documentclass[18pt,oneside,a4paper, titlepage]{article}
+\documentclass[18pt,oneside,a4paper,titlepage]{article}
 
 \usepackage[hidelinks]{hyperref}
 \usepackage[pdftex]{graphicx}
@@ -58,10 +58,10 @@ For any other information on this photodiode visit: \url{http://www.vishay.com/d
 		We wrote three files of code:
 		\begin{itemize}
 			\item main.cpp: source file where we wrote the main
-			\item adc.h: header file where we define the new class Adc with the constructor the method start() starts a conversion and the method read() waits for the end of the conversion and it returns the digital value
+			\item adc.h: header file where we define the new class Adc with the constructor, the method start() starts a conversion and the method read() waits for the end of the conversion and it returns the digital value
 			\item adc.cpp: source file where we wrote the code of the method defined in the adc.h
 		\end{itemize}
-		In the main.cpp the program starts and we take 200 values of the light of the surrounding space to fix a threshold. After that we monitor the light, and when we receive a value greater then the treshold, we start to save 30000 values in a buffer (the results are illustrated in the next chapter). In this buffer is memorized the code of the button that we pressed. Whenever 
+		In the main.cpp the program starts and we take 200 values of the light of the surrounding space to fix a threshold. After that we monitor the light, and when we receive a value greater then the treshold, we start to save 30000 values in a buffer (the results are illustrated in the next chapter). In this buffer is memorized the button code of the remote control that we pressed. Whenever we press the blue button of the board, if the program is not saving values in the buffer, we calculate a new threshold. 
 \newpage
 		\include{report1}
 \newpage

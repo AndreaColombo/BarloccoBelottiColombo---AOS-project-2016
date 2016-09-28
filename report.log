@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.24)  28 SEP 2016 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.24)  28 SEP 2016 23:14
 entering extended mode
 **./report.tex
 (report.tex
@@ -281,42 +281,33 @@ Package pdftex.def Info: boardLinked.jpeg used on input line 54.
 \openout2 = `report1.aux'.
 
  (report1.tex
-<graphs/onButton_2.jpg, id=75, 1606.0pt x 903.375pt>
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+<graphs/onButton_2.jpg, id=75, 618.81187pt x 335.75438pt>
 File: graphs/onButton_2.jpg Graphic file (type jpg)
 
 <use graphs/onButton_2.jpg>
 Package pdftex.def Info: graphs/onButton_2.jpg used on input line 10.
-(pdftex.def)             Requested size: 481.80373pt x 271.01459pt.
+(pdftex.def)             Requested size: 309.40518pt x 167.87677pt.
 
-Overfull \hbox (136.80373pt too wide) in paragraph at lines 10--11
- [][] 
- []
-
-<graphs/1Button.jpg, id=76, 1606.0pt x 903.375pt>
+<graphs/1Button.jpg, id=76, 688.07062pt x 413.29407pt>
 File: graphs/1Button.jpg Graphic file (type jpg)
- <use graphs/1Button.jpg>
+
+<use graphs/1Button.jpg>
 Package pdftex.def Info: graphs/1Button.jpg used on input line 17.
-(pdftex.def)             Requested size: 481.80373pt x 271.01459pt.
+(pdftex.def)             Requested size: 344.03447pt x 206.64651pt.
+ <graphs/button2.jpg, id=77, 652.23676pt x 283.0575pt>
+File: graphs/button2.jpg Graphic file (type jpg)
 
-Overfull \hbox (136.80373pt too wide) in paragraph at lines 17--18
- [][] 
- []
+<use graphs/button2.jpg>
+Package pdftex.def Info: graphs/button2.jpg used on input line 24.
+(pdftex.def)             Requested size: 326.11757pt x 141.5284pt.
+ [6
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<graphs/2Button.jpg, id=77, 632.3625pt x 174.6525pt>
-File: graphs/2Button.jpg Graphic file (type jpg)
- <use graphs/2Button.jpg>
-Package pdftex.def Info: graphs/2Button.jpg used on input line 24.
-(pdftex.def)             Requested size: 189.7102pt x 52.39615pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [6
-
- <./graphs/onButton_2.jpg>] [7 <./graphs/1Button.jpg> <./graphs/2Button.jpg>]
+ <./graphs/onButton_2.jpg> <./graphs/1Button.jpg>])
+[7 <./graphs/button2.jpg>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
  [8
 
@@ -336,7 +327,7 @@ Here is how much of TeX's memory you used:
  8639 multiletter control sequences out of 15000+200000
  8370 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,7n,30p,392b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,7n,30p,527b,344s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
@@ -344,7 +335,7 @@ rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (9 pages, 1076052 bytes).
+Output written on report.pdf (9 pages, 863824 bytes).
 PDF statistics:
  124 PDF objects out of 1000 (max. 8388607)
  20 named destinations out of 1000 (max. 500000)
