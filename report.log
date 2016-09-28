@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.24)  28 SEP 2016 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.24)  28 SEP 2016 12:23
 entering extended mode
 **./report.tex
 (report.tex
@@ -164,7 +164,7 @@ File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 LaTeX Warning: Unused global option(s):
     [18pt].
 
-(report.aux)
+(report.aux (report1.aux))
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -183,9 +183,11 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 \AtBeginShipoutBox=\box26
 Package hyperref Info: Link coloring OFF on input line 6.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count98
@@ -193,7 +195,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
- (report.out) (report.out)
+
+(report.out) (report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
@@ -246,13 +249,13 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.16 \newpage
-              [1] <board.jpg, id=42, 552.0625pt x 351.3125pt>
+              [1] <board.jpg, id=47, 552.0625pt x 351.3125pt>
 File: board.jpg Graphic file (type jpg)
  <use board.jpg>
 Package pdftex.def Info: board.jpg used on input line 21.
 (pdftex.def)             Requested size: 331.24005pt x 210.78911pt.
 
-[2 <./board.jpg>] <fotodiodo.jpg, id=47, 246.9225pt x 200.75pt>
+[2 <./board.jpg>] <fotodiodo.jpg, id=52, 246.9225pt x 200.75pt>
 File: fotodiodo.jpg Graphic file (type jpg)
 
 <use fotodiodo.jpg>
@@ -268,31 +271,72 @@ Missing character: There is no Â in font cmr10!
 Missing character: There is no ± in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
- [3 <./fotodiodo.jpg>] <boardLinked.jpeg, id=56, 349.90726pt x 499.26524pt>
+ [3 <./fotodiodo.jpg>] <boardLinked.jpeg, id=61, 349.90726pt x 499.26524pt>
 File: boardLinked.jpeg Graphic file (type jpg)
 
 <use boardLinked.jpeg>
 Package pdftex.def Info: boardLinked.jpeg used on input line 54.
 (pdftex.def)             Requested size: 209.94595pt x 299.56145pt.
  [4 <./boardLinked.jpeg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
- (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
+\openout2 = `report1.aux'.
+
+ (report1.tex
+<graphs/onButton_2.jpg, id=66, 1606.0pt x 903.375pt>
+File: graphs/onButton_2.jpg Graphic file (type jpg)
+
+<use graphs/onButton_2.jpg>
+Package pdftex.def Info: graphs/onButton_2.jpg used on input line 10.
+(pdftex.def)             Requested size: 481.80373pt x 271.01459pt.
+
+Overfull \hbox (136.80373pt too wide) in paragraph at lines 10--11
+ [][] 
+ []
+
+<graphs/1Button.jpg, id=67, 1606.0pt x 903.375pt>
+File: graphs/1Button.jpg Graphic file (type jpg)
+ <use graphs/1Button.jpg>
+Package pdftex.def Info: graphs/1Button.jpg used on input line 17.
+(pdftex.def)             Requested size: 481.80373pt x 271.01459pt.
+
+Overfull \hbox (136.80373pt too wide) in paragraph at lines 17--18
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<graphs/2Button.jpg, id=68, 632.3625pt x 174.6525pt>
+File: graphs/2Button.jpg Graphic file (type jpg)
+ <use graphs/2Button.jpg>
+Package pdftex.def Info: graphs/2Button.jpg used on input line 24.
+(pdftex.def)             Requested size: 189.7102pt x 52.39615pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [5
+
+ <./graphs/onButton_2.jpg>] [6 <./graphs/1Button.jpg> <./graphs/2Button.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
+ [7
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
+ (report.aux (report1.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 67D1CADC58C4A62E4170762D336046E1;255.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
+(rerunfilecheck)             Checksum: 45B5ABAA26CD57E9D3846FB71C7B54E2;312.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 5121 strings out of 493334
- 76030 string characters out of 3136672
- 157062 words of memory out of 3000000
- 8622 multiletter control sequences out of 15000+200000
+ 5154 strings out of 493334
+ 76524 string characters out of 3136672
+ 157370 words of memory out of 3000000
+ 8638 multiletter control sequences out of 15000+200000
  8370 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,7n,28p,327b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,7n,30p,327b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
@@ -300,9 +344,9 @@ rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (6 pages, 570429 bytes).
+Output written on report.pdf (8 pages, 1073842 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 

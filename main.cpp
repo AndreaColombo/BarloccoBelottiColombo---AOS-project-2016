@@ -13,14 +13,15 @@ using namespace miosix;
 typedef Gpio<GPIOA_BASE,0> recalibratingButton;
 
 Adc adc;
+short buffer[BUFF];
 
 
 int main(){
 	int tmp;
 	short x=0;
-	short buffer[BUFF];
+	char ch;
+	int var =0;
 	while(1){
-		int var =0;
 		for (int i = 0; i <200; i++){
 			adc.start();
 			var += adc.read();
@@ -40,8 +41,6 @@ int main(){
 				for(int i =0; i<BUFF; i++)
 					cout << buffer[i] << endl;
 				cout << "campionamento finito" << endl;
-				char ch;
-				cin >> ch;
 			}
 		}
 	}
