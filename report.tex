@@ -48,7 +48,7 @@ For any other information on this photodiode visit: \url{http://www.vishay.com/d
 			\item PB11:FTDI orange wire  
 			\item VDD: FTDI red wire 
 		\end{itemize}
-		The BPW34 sends the value that it sees to the pin PC1. This pin is connected to the ADC, it converts the value in digital so we can use it easly.\\ The FTDI is used to print the values, that the photodiode receives, on the Arduino serial monitor.
+		The BPW34 sends the value that it sees to the pin PC1. This pin is connected to the ADC, it converts the value in digital so we can use it easily.\\ The FTDI is used to print the values, that the photodiode receives, on the Arduino serial monitor.
 	\begin{figure}[h]
 		\centering
 		\includegraphics[scale=0.6]{boardLinked.jpeg}
@@ -61,7 +61,7 @@ For any other information on this photodiode visit: \url{http://www.vishay.com/d
 			\item adc.h: header file where we define the new class Adc with the constructor, the method start() starts a conversion and the method read() waits for the end of the conversion and it returns the digital value
 			\item adc.cpp: source file where we wrote the code of the method defined in the adc.h
 		\end{itemize}
-		In the main.cpp the program starts and we take 200 values of the light of the surrounding space to fix a threshold. After that we monitor the light, and when we receive a value greater then the treshold, we start to save 30000 values in a buffer (the results are illustrated in the next chapter). In this buffer is memorized the button code of the remote control that we pressed. Whenever we press the blue button of the board, if the program is not saving values in the buffer, we calculate a new threshold. 
+		In the main.cpp the program starts and it takes 200 values of the light of the surrounding space to fix a threshold. After that it monitors the light, and when it receives a value greater then the treshold, it starts to save 30000 values in a buffer (the results are illustrated in the next chapter). In this buffer is memorized the button code of the remote control that we pressed. Whenever we press the blue button of the board, if the program is not saving values in the buffer, we calculate a new threshold. 
 \newpage
 		\include{report1}
 \newpage
@@ -73,7 +73,7 @@ For any other information on this photodiode visit: \url{http://www.vishay.com/d
 	\item Notepad++: to write code.
 	\item Miosix Toolchain: to compile the project
 	\item ArduinoIDE: serial Arduino monitor 
-
+	\item Spread sheets of Google Drive: to make graphs
 \end{itemize}
 
 \end{document}
